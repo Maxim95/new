@@ -75,5 +75,35 @@ namespace WindowsFormsApplication1
         {
             textBox1.Text = textBox1.Text + 9;
         }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            a = float.Parse(textBox1.Text);
+            textBox1.Clear();
+            count = 1;
+            label1.Text = a.ToString() + "+";
+            znak = true;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            calculate();
+            label1.Text = "";
+        }
+        private void calculate()
+        {
+            switch (count)
+            {
+                case 1:
+                    b = a + float.Parse(textBox1.Text);
+                    textBox1.Text = b.ToString();
+                    break;
+            }
+        }
     }
 }
