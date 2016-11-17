@@ -17,6 +17,10 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
+        float a, b;
+        int count;
+        bool znak = true;
+
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Text = textBox1.Text + 0;
