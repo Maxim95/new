@@ -78,7 +78,16 @@ namespace WindowsFormsApplication1
 
         private void button17_Click(object sender, EventArgs e)
         {
-
+            if (znak == true)
+            {
+                textBox1.Text = "-" + textBox1.Text;
+                znak = false;
+            }
+            else if (znak == false)
+            {
+                textBox1.Text = textBox1.Text.Replace("-", "");
+                znak = true;
+            }
         }
 
         private void button13_Click(object sender, EventArgs e)
@@ -117,6 +126,12 @@ namespace WindowsFormsApplication1
             count = 2;
             label1.Text = a.ToString() + "-";
             znak = true;
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            label1.Text = "";
         }
     }
 }
