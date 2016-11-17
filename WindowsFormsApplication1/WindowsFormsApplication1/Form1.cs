@@ -107,6 +107,17 @@ namespace WindowsFormsApplication1
                     b = a - float.Parse(textBox1.Text);
                     textBox1.Text = b.ToString();
                     break;
+                case 3:
+                    b = a * float.Parse(textBox1.Text);
+                    textBox1.Text = b.ToString();
+                    break;
+                case 4:
+                    b = a / float.Parse(textBox1.Text);
+                    textBox1.Text = b.ToString();
+                    break;
+
+                default:
+                    break;
             }
         }
 
@@ -116,6 +127,24 @@ namespace WindowsFormsApplication1
             textBox1.Clear();
             count = 2;
             label1.Text = a.ToString() + "-";
+            znak = true;
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            a = float.Parse(textBox1.Text);
+            textBox1.Clear();
+            count = 3;
+            label1.Text = a.ToString() + "*";
+            znak = true;
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            a = float.Parse(textBox1.Text);
+            textBox1.Clear();
+            count = 4;
+            label1.Text = a.ToString() + "/";
             znak = true;
         }
     }
