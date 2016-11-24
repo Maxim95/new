@@ -132,6 +132,7 @@ namespace WindowsFormsApplication1
         {
             textBox1.Text = "";
             label1.Text = "";
+            Close();
         }
     }
 }
