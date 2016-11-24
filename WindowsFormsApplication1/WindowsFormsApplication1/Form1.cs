@@ -97,6 +97,7 @@ namespace WindowsFormsApplication1
             count = 1;
             label1.Text = a.ToString() + "+";
             znak = true;
+            //Разъяснить
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -126,7 +127,8 @@ namespace WindowsFormsApplication1
             count = 2;
             label1.Text = a.ToString() + "-";
             znak = true;
-        }
+            //Разъяснить
+                    }
 
         private void button16_Click(object sender, EventArgs e)
         {
